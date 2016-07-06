@@ -124,4 +124,9 @@
 
     <!-- Operating volatage for bluetooth controller. 0 by default -->
     <integer name="config_bluetooth_operating_voltage_mv">4</integer>
+
+    <!-- Indicate whether closing the lid causes the device to go to sleep and opening
+         it causes the device to wake up.
+         The default is false. -->
+    <bool name="config_lidControlsSleep">true</bool>
 </resources>
