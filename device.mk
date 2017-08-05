@@ -41,6 +41,10 @@ PRODUCT_PACKAGES += \
 # Display
 TARGET_SCREEN_DENSITY := 320
 
+# FlipFlap
+PRODUCT_PACKAGES += \
+    FlipFlap
+
 # Graphics
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
