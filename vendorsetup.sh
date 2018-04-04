@@ -1,2 +1,0 @@
-add_lunch_combo lineage_j7elte-eng
-add_lunch_combo lineage_j7elte-userdebug
