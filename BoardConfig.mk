@@ -16,3 +16,6 @@
 include device/samsung/universal7580-common/BoardConfigCommon.mk
 
 LOCAL_PATH := device/samsung/j7elte
+
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
