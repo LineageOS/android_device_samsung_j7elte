@@ -34,6 +34,22 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/gps.conf:system/etc/gps.conf \
     $(LOCAL_PATH)/configs/gps/gps.xml:system/etc/gps.xml
 
+# Radio
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full \
+    libsecril-client \
+    modemloader \
+    libxml2 \
+    rild \
+    libril \
+    libreference-ril \
+    libsecril-client-sap \
+    android.hardware.radio@1.1 \
+    android.hardware.radio.deprecated@1.0
+
+PRODUCT_COPY_FILES += \
+    device/samsung/universal7580-common/configs/init/rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rild.rc
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.target.rc
