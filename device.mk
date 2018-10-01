@@ -60,3 +60,6 @@ PRODUCT_PACKAGES += \
 
 # Inherit from universal7580-common
 $(call inherit-product, device/samsung/universal7580-common/device-common.mk)
+
+# Call the proprietary setup
+$(call inherit-product, vendor/samsung/j7elte/j7elte-vendor.mk)
