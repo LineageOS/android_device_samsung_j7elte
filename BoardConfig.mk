@@ -42,3 +42,9 @@ BOARD_FLASH_BLOCK_SIZE := 4096
 # RIL
 BOARD_MODEM_TYPE := tss310
 BOARD_PROVIDES_LIBRIL := true
+
+# Shim
+TARGET_LD_SHIM_LIBS += \
+    /system/lib/libcamera_client.so|/vendor/lib/libcamera_client_shim.so \
+    /system/lib/libstagefright.so|/vendor/lib/libstagefright_shim.so \
+    /system/lib/libexynoscamera.so|/vendor/lib/libexynoscamera_shim.so
