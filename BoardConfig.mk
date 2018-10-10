@@ -28,6 +28,9 @@ TARGET_INIT_VENDOR_LIB := libinit_sec
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_j7elte_defconfig
 
+# Network Routing
+TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE := true
+
 # Partitions
 BOARD_HAS_NO_MISC_PARTITION:= false
 TARGET_USERIMAGES_USE_EXT4 := true
