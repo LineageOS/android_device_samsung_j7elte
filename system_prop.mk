@@ -16,10 +16,6 @@
 PRODUCT_PROPERTY_OVERRIDES += \
     audio_hal.disable_two_mic=true
 
-# Display
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=320
-
 # Dalvik/Art
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=8m \

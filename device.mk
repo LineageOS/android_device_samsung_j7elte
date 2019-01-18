@@ -38,6 +38,9 @@ PRODUCT_PACKAGES += \
     camera.universal7580 \
     Snap
 
+# Display
+TARGET_SCREEN_DENSITY := 320
+
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/gps.conf:system/etc/gps.conf \
