@@ -4,8 +4,9 @@ on boot
     write /proc/sys/net/core/rmem_max 1048576
     write /proc/sys/net/core/wmem_max 2097152
 
-    # SSWAP
+    # Tune virtual memory
     write /proc/sys/vm/swappiness 130
+    write /proc/sys/vm/vfs_cache_pressure 50
 
 on fs
     # Permissions for LCD
