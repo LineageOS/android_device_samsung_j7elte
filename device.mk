@@ -35,6 +35,7 @@ TARGET_SCREEN_WIDTH := 720
 
 # Camera
 PRODUCT_PACKAGES += \
+    camera.universal7580 \
     Snap
 
 # GPS
