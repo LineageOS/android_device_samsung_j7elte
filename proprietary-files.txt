@@ -36,6 +36,10 @@ lib/libexynoscamera.so
 vendor/firmware/setfile_3l2.bin
 vendor/firmware/setfile_5e3.bin
 
+# RIL
+lib/libsec-ril.so
+lib/libsec-ril-dsds.so
+
 # Sensors
 lib/hw/sensors.universal7580.so
 
