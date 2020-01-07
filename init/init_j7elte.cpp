@@ -88,18 +88,21 @@ void vendor_load_properties()
     if (bootloader.find("J700F") != std::string::npos) {
         /* SM-J700F */
         property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/j7eltexx/j7elte:6.0.1/MMB29K/J700FXXU4BRL2:user/release-keys");
+        property_override("ro.system.build.fingerprint", "samsung/j7eltexx/j7elte:6.0.1/MMB29K/J700FXXU4BRL2:user/release-keys");
         property_override("ro.build.description", "j7eltexx-user 6.0.1 MMB29K J700FXXU4BRL2 release-keys");
         property_override_dual("ro.product.model", "ro.vendor.product.model", "SM-J700F");
         property_override_dual("ro.product.device", "ro.vendor.product.device", "j7elte");
     } else if (bootloader.find("J700M") != std::string::npos) {
         /* SM-J700M */
         property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/j7elteub/j7elte:6.0.1/MMB29K/J700MUBU2BSA1:user/release-keys");
+        property_override("ro.system.build.fingerprint", "samsung/j7elteub/j7elte:6.0.1/MMB29K/J700MUBU2BSA1:user/release-keys");
         property_override("ro.build.description", "j7elteub-user 6.0.1 MMB29K J700MUBU2BSA1 release-keys");
         property_override_dual("ro.product.model", "ro.vendor.product.model", "SM-J700M");
         property_override_dual("ro.product.device", "ro.vendor.product.device", "j7elte");
     } else if (bootloader.find("J700H") != std::string::npos) {
         /* SM-J700H */
         property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/j7e3gxx/j7e3g:6.0.1/MMB29K/J700HXXS3BRL1:user/release-keys");
+        property_override("ro.system.build.fingerprint", "samsung/j7e3gxx/j7e3g:6.0.1/MMB29K/J700HXXS3BRL1:user/release-keys");
         property_override("ro.build.description", "j7e3gxx-user 6.0.1 MMB29K J700HXXS3BRL1 release-keys");
         property_override_dual("ro.product.model", "ro.vendor.product.model", "SM-J700H");
         property_override_dual("ro.product.device", "ro.vendor.product.device", "j7e3g");
