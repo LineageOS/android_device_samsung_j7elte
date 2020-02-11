@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2015 The CyanogenMod Project
+<<<<<<< HEAD
+=======
+                   2017 The LineageOS Project
+>>>>>>> d83ff07... exynos9610: Disable LiveDisplay
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -12,6 +16,7 @@
      limitations under the License.
 -->
 <resources>
+<<<<<<< HEAD
 
     <!-- Default value for proximity check on screen wake
      NOTE ! - Enable for devices that have a fast response proximity sensor (ideally < 300ms)-->
@@ -66,4 +71,9 @@
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
     <integer name="config_deviceHardwareWakeKeys">1</integer>
+=======
+    <!--Disable LiveDisplay -->
+    <integer name="config_defaultLiveDisplayMode">0</integer>
+    <bool name="config_enableLiveDisplay">false</bool>
+>>>>>>> d83ff07... exynos9610: Disable LiveDisplay
 </resources>
