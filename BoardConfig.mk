@@ -50,7 +50,7 @@ BOARD_NEEDS_ROAMING_PROTOCOL_FIELD := true
 # Shim
 TARGET_LD_SHIM_LIBS += \
     /system/lib/libcamera_client.so|/vendor/lib/libcamera_client_shim.so \
-    /system/lib/libstagefright.so|/vendor/lib/libstagefright_shim.so \
+    /system/lib/libstagefright.so|/system/lib/libstagefright_shim.so \
     /system/lib/libexynoscamera.so|/vendor/lib/libexynoscamera_shim.so
 
 # Legacy BLOB Support
