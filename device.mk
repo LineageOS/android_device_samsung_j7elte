@@ -47,6 +47,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio_keys.kl:system/usr/keylayout/gpio_keys.kl \
     $(LOCAL_PATH)/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
