@@ -1,0 +1,57 @@
+# Mobicore
+app/020a0000000000000000000000000000.drbin
+app/FFFFFFFF000000000000000000000001.drbin
+app/mcRegistry/00060308060501020000000000000000.tlbin
+app/mcRegistry/02010000080300030000000000000000.tlbin
+app/mcRegistry/07010000000000000000000000000000.tlbin
+app/mcRegistry/07060000000000000000000000000000.tlbin
+app/mcRegistry/08130000000000000000000000000000.tlbin
+app/mcRegistry/ffffffff000000000000000000000004.tlbin
+app/mcRegistry/ffffffff000000000000000000000005.tlbin
+app/mcRegistry/ffffffff00000000000000000000000a.tlbin
+app/mcRegistry/ffffffff00000000000000000000000c.tlbin
+app/mcRegistry/ffffffff00000000000000000000000d.tlbin
+app/mcRegistry/ffffffff00000000000000000000000f.tlbin
+app/mcRegistry/ffffffff000000000000000000000012.tlbin
+app/mcRegistry/ffffffff000000000000000000000013.tlbin
+app/mcRegistry/ffffffff000000000000000000000016.tlbin
+app/mcRegistry/ffffffff000000000000000000000017.tlbin
+app/mcRegistry/ffffffff000000000000000000000019.tlbin
+app/mcRegistry/ffffffff000000000000000000000021.tlbin
+app/mcRegistry/ffffffff000000000000000000000041.tlbin
+app/mcRegistry/ffffffffd00000000000000000000004.tlbin
+app/mcRegistry/ffffffffd0000000000000000000000a.tlbin
+app/mcRegistry/ffffffffd00000000000000000000016.tlbin
+app/mcRegistry/fffffffff0000000000000000000001e.tlbin
+
+# cpboot-daemon
+bin/cbd|1b3ec965475829467a09e86a7103bc4086e66194
+
+# SSWAP
+bin/sswap|1670863f292325de353373caa9b8d34e47276eee
+
+# Camera
+lib/hw/camera.universal7580.so:lib/hw/camera.vendor.universal7580.so
+lib/libexynoscamera.so
+vendor/firmware/setfile_3l2.bin
+vendor/firmware/setfile_5e3.bin
+
+# Sensors
+lib/hw/sensors.universal7580.so
+
+# WiFi
+etc/wifi/bcmdhd_apsta.bin:vendor/etc/wifi/bcmdhd_apsta.bin
+etc/wifi/bcmdhd_mfg.bin:vendor/etc/wifi/bcmdhd_mfg.bin
+etc/wifi/bcmdhd_sta.bin:vendor/etc/wifi/bcmdhd_sta.bin
+etc/wifi/nvram_mfg.txt:vendor/etc/wifi/nvram_mfg.txt
+etc/wifi/nvram_net.txt:vendor/etc/wifi/nvram_net.txt
+
+# Bluetooth
+vendor/firmware/bcm43430A1_V0062.hcd
+
+# FIMC-IS (Imaging Subsystem)
+vendor/firmware/fimc_is_fd.bin
+vendor/firmware/fimc_is_fw2_3l2.bin
+
+# Multi Format Codec (MFC)
+vendor/firmware/mfc_fw.bin
