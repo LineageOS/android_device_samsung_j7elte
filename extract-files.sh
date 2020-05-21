@@ -69,5 +69,9 @@ extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
 BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 patchelf --replace-needed libprotobuf-cpp-full.so libprotobuf-cpp-fl26.so $BLOB_ROOT/lib/libsec-ril.so
 patchelf --replace-needed libprotobuf-cpp-full.so libprotobuf-cpp-fl26.so $BLOB_ROOT/lib/libsec-ril-dsds.so
+(perl -pi -e "s/\/system\/etc\/plmn_delta.bin/\/vendor\/etc\/plmn_delta.bin/g" $BLOB_ROOT/lib/libsec-ril.so)
+(perl -pi -e "s/\/system\/etc\/plmn_delta.bin/\/vendor\/etc\/plmn_delta.bin/g" $BLOB_ROOT/lib/libsec-ril-dsds.so)
+(perl -pi -e "s/\/system\/etc\/plmn_se13.bin/\/vendor\/etc\/plmn_se13.bin/g" $BLOB_ROOT/lib/libsec-ril.so)
+(perl -pi -e "s/\/system\/etc\/plmn_se13.bin/\/vendor\/etc\/plmn_se13.bin/g" $BLOB_ROOT/lib/libsec-ril-dsds.so)
 
 "${MY_DIR}/setup-makefiles.sh"
