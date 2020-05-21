@@ -25,6 +25,9 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_sec
 
+# Kernel
+TARGET_KERNEL_CONFIG := lineageos_j7elte_defconfig
+
 # Partitions
 BOARD_HAS_NO_MISC_PARTITION:= false
 TARGET_USERIMAGES_USE_EXT4 := true
