@@ -1,0 +1,28 @@
+on boot
+    # Assign TCP buffer thresholds to be ceiling value of technology maximums
+    # Increased technology maximums should be reflected here.
+    write /proc/sys/net/core/rmem_max 1048576
+    write /proc/sys/net/core/wmem_max 2097152
+
+    # SSWAP
+    write /proc/sys/vm/swappiness 130
+
+on fs
+    # Permissions for LCD
+    chown system radio /sys/class/lcd/panel/mcd_mode
+    chown system media_rw /sys/class/backlight/panel/weakness_hbm_comp
+
+    # Permission for flashlight control for HAL3.3
+    chmod 0660 /sys/class/camera/flash/front_torch_flash
+    chown cameraserver system /sys/class/camera/flash/front_torch_flash
+
+    # Permissions Camera
+    chown system radio /sys/class/camera/flash/front_flash
+
+on property:sys.boot_completed=1
+    write /proc/sys/vm/dirty_bytes 41943040
+    write /proc/sys/vm/dirty_background_bytes 20971520
+
+    # Set best cache size for internal and external storages
+    write /sys/block/mmcblk0/bdi/read_ahead_kb 128
+    write /sys/block/mmcblk1/bdi/read_ahead_kb 2048
