@@ -1,3 +1,5 @@
+# All unpinned blobs come either from J700F (7.1.1), J700M (6.0.1) or A310F (7.0) stock firmware
+
 # Mobicore
 app/020a0000000000000000000000000000.drbin:vendor/app/020a0000000000000000000000000000.drbin
 app/FFFFFFFF000000000000000000000001.drbin:vendor/app/FFFFFFFF000000000000000000000001.drbin
@@ -24,10 +26,10 @@ app/mcRegistry/ffffffffd0000000000000000000000a.tlbin:vendor/app/mcRegistry/ffff
 app/mcRegistry/ffffffffd00000000000000000000016.tlbin:vendor/app/mcRegistry/ffffffffd00000000000000000000016.tlbin
 app/mcRegistry/fffffffff0000000000000000000001e.tlbin:vendor/app/mcRegistry/fffffffff0000000000000000000001e.tlbin
 
-# cpboot-daemon
+# cpboot-daemon - from boot.img and pinned to stop removal when extracting from system image
 bin/cbd:vendor/bin/cbd|1b3ec965475829467a09e86a7103bc4086e66194
 
-# SSWAP
+# SSWAP - from boot.img and pinned to stop removal when extracting from system image
 bin/sswap:vendor/bin/sswap|1670863f292325de353373caa9b8d34e47276eee
 
 # Camera
@@ -52,7 +54,7 @@ etc/wifi/bcmdhd_sta.bin:vendor/etc/wifi/bcmdhd_sta.bin
 etc/wifi/nvram_mfg.txt:vendor/etc/wifi/nvram_mfg.txt
 etc/wifi/nvram_net.txt:vendor/etc/wifi/nvram_net.txt
 
-# Bluetooth
+# Bluetooth firmware from raspbian disk image
 vendor/firmware/bcm43430A1_V0062.hcd
 
 # FIMC-IS (Imaging Subsystem)
