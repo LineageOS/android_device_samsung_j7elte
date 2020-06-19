@@ -1,4 +1,4 @@
-# All unpinned blobs come either from J700F (7.1.1), J700M (6.0.1) or A310F (7.0) stock firmware
+# All unpinned blobs come from J700FXXU4BRL2 (6.0.1) stock firmware
 
 # Mobicore
 app/020a0000000000000000000000000000.drbin:vendor/app/020a0000000000000000000000000000.drbin
@@ -33,16 +33,16 @@ bin/cbd:vendor/bin/cbd|1b3ec965475829467a09e86a7103bc4086e66194
 bin/sswap:vendor/bin/sswap|1670863f292325de353373caa9b8d34e47276eee
 
 # Camera
-lib/hw/camera.universal7580.so:lib/hw/camera.vendor.universal7580.so
-lib/libexynoscamera.so
+lib/hw/camera.universal7580.so:lib/hw/camera.vendor.universal7580.so|e1c060169689efbff9e378854cbe58d43ffbad80 # from J700T 7.1.1 stock (J700F 6.0.1 camera libs don't work well with video recording)
+lib/libexynoscamera.so|97e84dba32485b9149a95975aae986581d267df4 # from J700T 7.1.1 stock (J700F 6.0.1 camera libs don't work well with video recording)
 vendor/firmware/setfile_3l2.bin
 vendor/firmware/setfile_5e3.bin
 
 # RIL
-etc/plmn_delta.bin:vendor/etc/plmn_delta.bin
-etc/plmn_se13.bin:vendor/etc/plmn_se13.bin
-lib/libsec-ril.so
-lib/libsec-ril-dsds.so
+etc/plmn_delta.bin:vendor/etc/plmn_delta.bin|4c61f2007b564f45d36e08fa7d6c7bf6473f9db4 # from G960FXXS7DTB5 firmware (plmn database is more recent than stock)
+etc/plmn_se13.bin:vendor/etc/plmn_se13.bin|a999c689a0248687d1327aa44b66d4c5cf2343fd # from G960FXXS7DTB5 firmware (plmn database is more recent than stock)
+lib/libsec-ril.so|22b37e4c8c5d7c9c5e14a2eabddeface16b44297 # from A3 2016 (needed as stock marshmallow libs have issues with calling) with gpsd location patched to /vendor/bin/gpsd
+lib/libsec-ril-dsds.so|97c52f96fc88ee2f910c6cfa542c19071160f46c # from A3 2016 (needed as stock marshmallow libs have issues with calling) with gpsd location patched to /vendor/bin/gpsd
 
 # Sensors
 lib/hw/sensors.universal7580.so
