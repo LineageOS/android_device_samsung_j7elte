@@ -39,8 +39,8 @@ vendor/firmware/setfile_3l2.bin
 vendor/firmware/setfile_5e3.bin
 
 # RIL
-etc/plmn_delta.bin:vendor/etc/plmn_delta.bin|4c61f2007b564f45d36e08fa7d6c7bf6473f9db4 # from G960FXXS7DTB5 firmware (plmn database is more recent than stock)
-etc/plmn_se13.bin:vendor/etc/plmn_se13.bin|a999c689a0248687d1327aa44b66d4c5cf2343fd # from G960FXXS7DTB5 firmware (plmn database is more recent than stock)
+etc/plmn_delta.bin:vendor/etc/plmn_delta.bin
+etc/plmn_se13.bin:vendor/etc/plmn_se13.bin
 lib/libsec-ril.so|22b37e4c8c5d7c9c5e14a2eabddeface16b44297 # from A3 2016 (needed as stock marshmallow libs have issues with calling) with gpsd location patched to /vendor/bin/gpsd
 lib/libsec-ril-dsds.so|97c52f96fc88ee2f910c6cfa542c19071160f46c # from A3 2016 (needed as stock marshmallow libs have issues with calling) with gpsd location patched to /vendor/bin/gpsd
 
