@@ -41,11 +41,6 @@ PRODUCT_PACKAGES += \
 # Display
 TARGET_SCREEN_DENSITY := 320
 
-# GPS
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/gps/gps.conf:system/etc/gps.conf \
-    $(LOCAL_PATH)/configs/gps/gps.xml:system/etc/gps.xml
-
 # Graphics
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
