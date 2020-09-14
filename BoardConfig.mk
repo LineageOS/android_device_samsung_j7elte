@@ -47,6 +47,9 @@ BOARD_MODEM_TYPE := tss310
 BOARD_PROVIDES_LIBRIL := true
 BOARD_NEEDS_ROAMING_PROTOCOL_FIELD := true
 
+# Manifest
+DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/manifest.xml
+
 # Shim
 TARGET_LD_SHIM_LIBS += \
     /system/lib/libcamera_client.so|/vendor/lib/libcamera_client_shim.so \
