@@ -54,8 +54,8 @@ etc/wifi/bcmdhd_sta.bin:vendor/etc/wifi/bcmdhd_sta.bin
 etc/wifi/nvram_mfg.txt:vendor/etc/wifi/nvram_mfg.txt
 etc/wifi/nvram_net.txt:vendor/etc/wifi/nvram_net.txt
 
-# Bluetooth firmware from raspbian disk image
-vendor/firmware/bcm43430A1_V0062.hcd
+# Bluetooth firmware from SM-A310F stock (A310FXXS5CTK2)
+vendor/firmware/bcm43438A1_V0067.0280.hcd
 
 # FIMC-IS (Imaging Subsystem)
 vendor/firmware/fimc_is_fd.bin
