@@ -4,10 +4,6 @@ on boot
     write /proc/sys/net/core/rmem_max 1048576
     write /proc/sys/net/core/wmem_max 2097152
 
-    # Tune virtual memory
-    write /proc/sys/vm/swappiness 130
-    write /proc/sys/vm/vfs_cache_pressure 50
-
 on fs
     # Permissions for LCD
     chown system radio /sys/class/lcd/panel/mcd_mode
@@ -24,9 +20,6 @@ on fs
     copy /efs/Battery/prev_batt_capacity_max /sys/class/power_supply/battery/batt_capacity_max
 
 on property:sys.boot_completed=1
-    write /proc/sys/vm/dirty_bytes 41943040
-    write /proc/sys/vm/dirty_background_bytes 20971520
-
     # Set best cache size for internal and external storages
     write /sys/block/mmcblk0/bdi/read_ahead_kb 128
     write /sys/block/mmcblk1/bdi/read_ahead_kb 2048
